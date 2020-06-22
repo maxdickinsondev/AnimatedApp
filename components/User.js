@@ -42,14 +42,11 @@ export default class User extends Component {
 
     return (
       <Animated.View style={[
-          { transform: [
-            { translateY: this.state.offset.y },
-            
-            ]
-         },
-            {
-                opacity: this.state.opacity
-            }
+        { transform: [{ translateY: this.state.offset.y }]
+        },
+        {
+            opacity: this.state.opacity
+        }
       ]}>
           <TouchableWithoutFeedback onPress={this.props.onPress}>
             <View style={styles.userContainer}>
